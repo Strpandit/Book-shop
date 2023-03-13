@@ -1,0 +1,158 @@
+
+<html>
+    <head>
+        <title>Book Seller</title>
+        <style>
+            h1{
+    text-align: center;
+    background-color: darkgoldenrod;
+    padding: 5px;
+    border-radius: 18px;
+}
+h3{
+    text-align: center;
+    background-color: darkblue;
+    padding: 3px;
+    border-radius: 20px;
+    margin-inline: 35%;
+    font-size: 24px;
+    font-family: cursive;
+    color: white;
+}
+hr{
+    outline-style:groove;
+}
+a{
+    text-decoration-line: none;
+    font-size: 20px;
+    margin: 8px;
+    text-decoration-color: darkblue;
+}
+.container{
+    position: relative;
+    width:max-content;
+    float: left;
+    margin: 30px;
+}
+
+.card{
+    border: 1px solid black;
+    width: max-content;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+
+.card img{
+    width: 170px;
+    height: 170px;
+    padding: 5px;
+}
+
+.tittle{
+    font-weight: bold;
+    margin: 12px;
+}
+
+button{
+    border: 2px solid rgb(255, 136, 0);
+    background: #f7a440;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 0 5px 5px rgb(255, 136, 0) inset;
+}
+        </style>
+    </head>
+    <body>
+
+        <h1>SECOND HAND BOOK SELLER</h1>
+        <H3>Books Store</H3>
+        <a href="index.html">Home</a>
+        <a href="mycart.php">My Cart</a>
+        <hr><br>
+
+        <div class="container">
+            
+                    <form action="addtocart.php" method="post">
+                        <div class="card" id="itme1">
+                            <img src="books\chem..jpeg" alt="chem book">
+                            <div class="tittle">Chemistry Book</div>
+                            <div class="tittle">C.P. Publication</div>
+                            <div class="tittle">Price 349/-</div>
+                            
+                            <button type="submit" name="Add_to_cart">Add To Cart</button>
+                            <input type="hidden" name="item_name" value="Chemistry book">
+                            <input type="hidden" name="price" value="349">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="container">
+                    <form action="addtocart.php" method="post">
+                        <div class="card" id="itme2">
+                            <img src="books\physics.jpeg" alt="physics book">
+                            <div class="tittle">Physics Book</div>
+                            <div class="tittle">R.P. Goyal</div>
+                            <div class="tittle">Price 299/-</div>
+                            
+                            <button type="submit" name="Add_to_cart">Add To Cart</button>
+                            <input type="hidden" name="item_name" value="physics book">
+                            <input type="hidden" name="price" value="299">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="container">
+                <form action="addtocart.php" method="post">
+                    <div class="card" id="itme3">
+                        <img src="books\math.jpeg" alt="physics book">
+                        <div class="tittle">Math Book</div>
+                        <div class="tittle">Dr. Sanjeev Verma</div>
+                        <div class="tittle">Price 199/-</div>
+                        
+                        <button type="submit" name="Add_to_cart">Add To Cart</button>
+                        <input type="hidden" name="item_name" value="math book">
+                        <input type="hidden" name="price" value="199">
+                    </div>
+                </form>
+            </div>
+
+            <div class="container">
+                <form action="addtocart.php" method="post">
+                    <div class="card" id="itme4">
+                        <img src="books\reasoning.jpeg" alt="physics book">
+                        <div class="tittle">Reasoning Book</div>
+                        <div class="tittle">R.S. Aggrwal</div>
+                        <div class="tittle">Price 119/-</div>
+                        
+                        <button type="submit" name="Add_to_cart">Add To Cart</button>
+                        <input type="hidden" name="item_name" value="reas book">
+                        <input type="hidden" name="price" value="119">
+                    </div>
+                </form>
+            </div>
+
+            <div class="container">
+                <form action="addtocart.php" method="post">
+                    <div class="card" id="itme5">
+                        <img src="books\gk.jpeg" alt="physics book">
+                        <div class="tittle">G.K. Book</div>
+                        <div class="tittle">Manohar Pandey</div>
+                        <div class="tittle">Price 99/-</div>
+                        
+                        <button type="submit" name="Add_to_cart">Add To Cart</button>
+                        <input type="hidden" name="item_name" value="gk book">
+                        <input type="hidden" name="price" value="99">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
