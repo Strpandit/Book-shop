@@ -1,0 +1,22 @@
+.category{
+    color:white;
+    font-size: 1rem;
+    font-weight: 680;
+    cursor: pointer;
+    text-decoration: none;
+}
+.category:hover{
+    color: black;
+    background-color: white;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/* .bg{
+    width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 40%; 
+} */
